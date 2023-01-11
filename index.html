@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <script src="./js/jsencrypt.min.js"></script>
+    <script src="./js/path-composedPath-polyfill.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蓬海涞讯绩效方案参数测算系统</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      // 浏览器兼容
+      if (!Object.entries)
+          Object.entries = function (obj) {
+            var ownProps = Object.keys(obj),
+              i = ownProps.length,
+              resArray = new Array(i); // preallocate the Array
+            while (i--)
+              resArray[i] = [ownProps[i], obj[ownProps[i]]];
+
+            return resArray;
+          };
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

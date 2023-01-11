@@ -1,0 +1,12 @@
+/* 只需要重写你需要的即可 */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #00aec6,
+    ),
+  ),
+  $table:(
+    'border-color':#dbdbdb,
+    'header-text-color':rgb(95, 95, 95),
+  )
+);
